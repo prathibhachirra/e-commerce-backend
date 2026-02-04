@@ -1,0 +1,33 @@
+
+
+###
+POST http://localhost:2000/product-api/products
+Content-Type: application/json
+
+{
+  "productname": "Smartphone",
+  "price": 7000,
+  "brand": "moto"
+}
+
+
+###
+POST http://localhost:2000/user-api/users
+Content-Type: application/json
+
+{
+  "name": "prathibha",
+  "email": "ishuuu",
+  "password": "ishu",
+  "cart": []
+}
+
+
+### Req to add product to cart
+PUT http://localhost:2000/user-api/user-cart/user-id/69818c4bc2f7553305e0f785/product-id/69818c53c2f7553305e0f787
+
+
+
+### Read user by id
+GET http://localhost:2000/user-api/users/698354e089f07a26c927cb06
+
